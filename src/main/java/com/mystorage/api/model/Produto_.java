@@ -10,6 +10,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 @StaticMetamodel(Produto.class)
 public abstract class Produto_ {
 
+	public static volatile SingularAttribute<Produto, String> imgUrl;
 	public static volatile SingularAttribute<Produto, String> tipo;
 	public static volatile SingularAttribute<Produto, LocalDateTime> dataValidade;
 	public static volatile SingularAttribute<Produto, LocalDateTime> dataFabricacao;
@@ -18,6 +19,7 @@ public abstract class Produto_ {
 	public static volatile SingularAttribute<Produto, Long> id;
 	public static volatile SingularAttribute<Produto, String> nomeProduto;
 
+	public static final String IMG_URL = "imgUrl";
 	public static final String TIPO = "tipo";
 	public static final String DATA_VALIDADE = "dataValidade";
 	public static final String DATA_FABRICACAO = "dataFabricacao";

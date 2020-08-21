@@ -34,6 +34,9 @@ public class Produto {
 	@Column(name = "datavalidade")
 	private LocalDateTime dataValidade;
 	
+	@Column(name = "imgurl")
+	private String imgUrl;
+
 	public Long getId() {
 		return id;
 	}
@@ -45,49 +48,58 @@ public class Produto {
 	public String getNomeProduto() {
 		return nomeProduto;
 	}
-	
+
 	public void setNomeProduto(String nomeProduto) {
 		this.nomeProduto = nomeProduto;
 	}
-	
+
 	public Double getValor() {
 		return valor;
 	}
-	
+
 	public void setValor(Double valor) {
 		this.valor = valor;
 	}
-	
+
 	public String getTipo() {
 		return tipo;
 	}
-	
+
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
-	
+
 	public Calendar getDataInclusao() {
 		return dataInclusao;
 	}
-	
+
 	public void setDataInclusao(Calendar dataInclusao) {
 		this.dataInclusao = dataInclusao;
 	}
-	
+
 	public LocalDateTime getDataFabricacao() {
 		return dataFabricacao;
 	}
-	
+
 	public void setDataFabricacao(LocalDateTime dataFabricacao) {
 		this.dataFabricacao = dataFabricacao;
 	}
-	
+
 	public LocalDateTime getDataValidade() {
 		return dataValidade;
 	}
-	
+
 	public void setDataValidade(LocalDateTime dataValidade) {
 		this.dataValidade = dataValidade;
 	}
+
+	public String getImgUrl() {
+		return imgUrl;
+	}
+
+	public void setImgUrl(String imgUrl) {
+		this.imgUrl = imgUrl;
+	}
+	
 	
 }
